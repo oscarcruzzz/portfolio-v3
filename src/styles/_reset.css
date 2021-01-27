@@ -5,6 +5,10 @@ html {
   box-sizing: border-box;
   overflow-y: scroll;
 }
+*{
+  list-style: none;
+  text-decoration: none;
+}
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -341,8 +345,7 @@ ul {
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+  padding-top: 0;  
   list-style-position: outside;
   list-style-image: none;
 }

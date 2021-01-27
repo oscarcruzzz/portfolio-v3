@@ -2,6 +2,7 @@ $main_dark: #0f0f0f
 $main_red: #C63637
 $main_light: #FBFAF8
 
+//Slider---------------------------------------------->
 .swiper-slide
     &:hover
         cursor: grab
@@ -15,8 +16,8 @@ $main_light: #FBFAF8
             &:hover
                 transform: scale(1.05)                
                 transition: all .3s ease-in
-
-
+//End Slider ----------------------------------------->
+//Asider---------------------------------------------->
 .index-main
     display: grid
     grid-template-columns: 450px auto
@@ -28,11 +29,37 @@ $main_light: #FBFAF8
     aside        
         display: flex
         flex-direction: column
-        justify-content: center
+        justify-content: flex-end
         padding: 0 50px
         background-color: $main_dark
         grid-row: 1/3
         color: $main_light
+        .aside-buttons-container
+            width: 100%
+            display: flex
+            justify-content: space-around
+            margin-bottom: 10em
+        .aside-social-container
+            font-family: 'Futura Light', sans-serif
+            font-weight: 300
+            span
+                transform: rotate(-90deg)
+                display: inline-block
+                position: relative
+                bottom: -85px
+                right: 1.7em
+                font-weight: lighter
+                font-size: 16px
+            ul
+                padding-left: 1em
+                border-left: solid 1px $main_light
+                li
+                    margin: 0
+                    a
+                        color: $main_light
+                        font-size: 20px
+                        &:hover
+                            text-decoration: line-through
     .swiper-container 
         width: 100%
         padding: 15em 0px 0px 2em
@@ -51,10 +78,6 @@ $main_light: #FBFAF8
         margin: auto
         span
             transform: rotate(20deg)
-            color: white
-    .aside-buttons-container
-        width: 100%
-        display: flex
-        justify-content: space-around
+            color: white    
 
-    
+//End Aside----------------------------------------------->
