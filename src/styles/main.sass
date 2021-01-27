@@ -1,0 +1,54 @@
+// +---------------------------
+// |Header
+// +---------------------------
+
+header
+    display: flex
+    background-color: $main_red
+    justify-content: space-around
+    align-items: center
+    position: absolute
+    width: 100%
+    z-index: 2
+    .bars
+        svg
+            position: absolute
+            left: 10px
+            top: 10px
+            cursor: pointer
+            width: 75px            
+            path
+                stroke-width: 25
+                stroke-linecap: round
+                stroke: #fff
+                fill: none
+                transition: all .5s ease-in-out
+                
+.top_bar,
+.bottom_bar
+    stroke-dasharray: 240px 910px
+
+.middle_bar
+    stroke-dasharray: 240px 240px
+
+.open .top_bar,
+.open .bottom_bar
+    stroke-dashoffset: -650px
+
+.open .middle_bar
+    stroke-dasharray: 0px 220px
+    stroke-dashoffset: -120px
+
+.main-button
+    border: solid 1px $main_red
+    padding: 10px 20px
+    font-family: $heavy
+    color: $main_red
+    font-weight: light
+    text-decoration: none
+    box-shadow: 8px 8px 0px $main_red
+    transition: all 0.3s
+    &:hover
+        background-color: $main_red
+        box-shadow: 0px 0px 0px $main_red
+        color: $main_dark
