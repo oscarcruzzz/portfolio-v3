@@ -10,11 +10,9 @@ import 'swiper/components/scrollbar/scrollbar.scss';
 const Slider = () => {
   return (
     <Swiper
-      spaceBetween={15}
+      spaceBetween={20}
       slidesPerView={2}
       scrollbar={{ draggable: true }}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={swiper => console.log(swiper)}
     >
       <SwiperSlide>
         <figure>

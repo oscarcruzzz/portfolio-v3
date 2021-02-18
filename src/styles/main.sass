@@ -5,11 +5,12 @@
 header
     display: flex
     background-color: $main_red
-    justify-content: space-around
+    justify-content: space-between
     align-items: center
     position: absolute
     width: 100%
     z-index: 2
+    padding: 0 50px
     .bars
         svg
             position: absolute
@@ -52,3 +53,70 @@ header
         background-color: $main_red
         box-shadow: 0px 0px 0px $main_red
         color: $main_dark
+.menu-bars
+    color: $main_light
+    background-color: blue
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    div
+        cursor: pointer
+        span
+            display: block
+            margin-bottom: 5px
+            width: 40px
+            height: 2px
+            background-color: $main_light
+
+.sticky_bars
+    position: fixed
+    z-index: 2
+    top: 150px
+    left: -100%
+    .xs-text
+        background-color: black
+        color: $main_light
+        padding-left: 15px
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        div
+            cursor: pointer
+            span
+                display: block
+                margin-bottom: 5px
+                width: 40px
+                height: 2px
+                background-color: $main_light
+    .media-icons
+        width: 100%
+        margin-left: 15px
+        li
+            margin-top: 20px
+            background-color: $main_light
+            text-align: center
+            height: 50px
+            width: 50px
+            display: flex
+            align-content: center
+            align-items: center
+            border-radius: 25px
+            cursor: pointer
+            img
+                width: 20px
+                margin: auto
+
+nav
+    background-color: $main_dark
+    height: 100vh
+    width: 100%
+    position: fixed
+    left: -100%
+    transition: all .6s ease-in-out
+    z-index: 3
+.open-menu
+    left: 0 !important
+    transition: all .6s ease-in-out

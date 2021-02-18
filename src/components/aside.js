@@ -17,16 +17,7 @@ const Aside = () => {
       <div className="aside-buttons-container">
         <Button route="/" text="Ver mi CV"/>
         <Button route="/" text="Contacto" />
-      </div>
-      <div className="aside-social-container">
-        <span>Sigueme</span>
-          <ul>                        
-            <li><a href="https://www.linkedin.com/in/oscar-cruz-b48b73b6/" target="_blank">Linkein</a></li>
-            <li><a href="https://github.com/oscarcruzzz" target="_blank">Github</a></li>
-            <li><a href="https://www.facebook.com/rackzoothe" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/cruz.oscarr_ux/" target="_blank">Instagram</a></li>
-          </ul>
-      </div>
+      </div>      
     </aside>
   )
 }
