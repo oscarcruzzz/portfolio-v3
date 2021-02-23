@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 // import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import Didactvs from "../images/logo/didactvs-letters.webp"
+import Didactvs from "../images/logo/didactvs.webp"
 
 const Header = ({ siteTitle }) => {
   const [showMenu, setShowMenu] = useState(false)
@@ -23,11 +23,9 @@ const Header = ({ siteTitle }) => {
           <span></span>
         </div>
       </div>
-      <div>
-        <figure>
-          <img src={Didactvs} alt="lorem" className="logo" />
-        </figure>
-      </div>
+      <figure>
+        <img src={Didactvs} alt="lorem" className="logo" />
+      </figure>
       <div>
         <button>Dark mode</button>
       </div>
