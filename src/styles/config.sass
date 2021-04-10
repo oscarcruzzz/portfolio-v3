@@ -1,29 +1,32 @@
-@font-face 
-    font-family: "Bebas"
-    src: url('../fonts/BebasNeue-Regular.ttf') format("ttf")
-
-@font-face 
-    font-family: "Futura Heavy"
-    src: url('../fonts/Futura-Heavy.ttf') format("ttf")
-
-@font-face 
-    font-family: "Futura Light"
-    src: url('../fonts/Futura-Light.ttf') format("ttf")
-
 $main_dark: #0f0f0f
 $main_red: #C63637
 $main_light: #FBFAF8
-$bebas: "Bebas"
+$bebas: "Bebas Neue"
 $heavy: "Futura Heavy"
 $light: "Futura Light"
 
 @import _reset.css
-@import main
 
-html    
-    overflow-y: hidden
+@mixin border($color)
+    text-shadow: -1px -1px 0 $color, 1px -1px 0 $color,-1px 1px 0 $color,1px 1px 0 $color
+
+// html    
+//     overflow-y: hidden
 
 body
     background-color: $main_dark    
 .logo
     width: 190px
+.container
+    display:flex
+    justify-content: space-between
+    margin: auto
+.section-title
+    transform: rotate(-90deg)
+    font-family: $bebas
+    font-size: 360px
+    color: $main_dark
+    letter-spacing: 10px
+    font-weight: 400
+    @include border($main_light)
+    

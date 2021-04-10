@@ -8,6 +8,7 @@ import Slider from "../components/slider"
 import Aside from "../components/aside"
 import Counter from "../components/counter"
 import "../styles/index.sass"
+import Skills from "../components/skills"
 
 const IndexPage = () => {
   const [showIndex, setIndexState] = useState(false)
@@ -61,6 +62,7 @@ const IndexPage = () => {
         </div>
       </div>
       <Counter />
+      <Skills/>
     </Layout>
   )
 }

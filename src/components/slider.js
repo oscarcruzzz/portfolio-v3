@@ -17,25 +17,25 @@ const Slider = () => {
       <SwiperSlide>
         <figure>
           <img src="https://via.placeholder.com/670x450" alt="car"/>
-          <figcaption></figcaption>
+          <figcaption>Lorem</figcaption>
         </figure>
       </SwiperSlide>
       <SwiperSlide>
         <figure>
           <img src="https://via.placeholder.com/650x450" alt="house" />
-          <figcaption></figcaption>
+          <figcaption>Lorem</figcaption>
         </figure>
       </SwiperSlide>
       <SwiperSlide>
         <figure>
           <img src="https://via.placeholder.com/750x505" alt="horse" />
-          <figcaption></figcaption>
+          <figcaption>Lorem</figcaption>
         </figure>
       </SwiperSlide>
       <SwiperSlide>
         <figure>
           <img src="https://via.placeholder.com/450x450" alt="movie" />
-          <figcaption></figcaption>
+          <figcaption>Lorem</figcaption>
         </figure>
       </SwiperSlide>      
     </Swiper>
