@@ -1,14 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Open+Sans:wght@300&display=swap")
+    
 $main_dark: #0f0f0f
 $main_red: #C63637
 $main_light: #FBFAF8
 $bebas: "Bebas Neue"
-$heavy: "Futura Heavy"
-$light: "Futura Light"
+$montserrat: "Montserrat", sans-serif
+$open: "Open Sans", sans-serif
 
 @import _reset.css
 
 @mixin border($color)
     text-shadow: -1px -1px 0 $color, 1px -1px 0 $color,-1px 1px 0 $color,1px 1px 0 $color
+
+@mixin font($ff,$fs,$fw,$color,$ls)
+    font-family: $ff
+    font-size:$fs
+    font-weight: $fw
+    color: $color
+    letter-spacing: $ls
+    
 
 // html    
 //     overflow-y: hidden
@@ -21,12 +31,10 @@ body
     display:flex
     justify-content: space-between
     margin: auto
-.section-title
-    transform: rotate(-90deg)
-    font-family: $bebas
-    font-size: 360px
-    color: $main_dark
-    letter-spacing: 10px
-    font-weight: 400
+.section-title    
+    transform: rotate(-90deg)    
+    @include font($bebas,360px,400,$main_dark,10px)
     @include border($main_light)
+p
+    @include font($open,.9em,normal,$main_light,normal)
     

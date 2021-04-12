@@ -16,24 +16,28 @@ const Slider = () => {
     >
       <SwiperSlide>
         <figure>
+          <h3>Lorem</h3>
           <img src="https://via.placeholder.com/670x450" alt="car"/>
           <figcaption>Lorem</figcaption>
         </figure>
       </SwiperSlide>
       <SwiperSlide>
         <figure>
+          <h3>Lorem</h3>
           <img src="https://via.placeholder.com/650x450" alt="house" />
           <figcaption>Lorem</figcaption>
         </figure>
       </SwiperSlide>
       <SwiperSlide>
         <figure>
+          <h3>Lorem</h3>
           <img src="https://via.placeholder.com/750x505" alt="horse" />
           <figcaption>Lorem</figcaption>
         </figure>
       </SwiperSlide>
       <SwiperSlide>
         <figure>
+          <h3>Lorem</h3>
           <img src="https://via.placeholder.com/450x450" alt="movie" />
           <figcaption>Lorem</figcaption>
         </figure>

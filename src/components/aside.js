@@ -9,7 +9,7 @@ const Aside = () => {
         <br />
         Mi nombre es Oscar
       </h1>
-      <h4>Desarrollador web y diseñador de interfaces.</h4>
+      <p>Desarrollador web y diseñador de interfaces.</p>
       <p>
         Diseño aplicaciones adaptadas a tu marca y proveo de experiencias
         digitales para que tus clientes se queden en tu sitio web.

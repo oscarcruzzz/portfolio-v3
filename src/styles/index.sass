@@ -9,21 +9,39 @@
         padding: 1%
         transition: all .2s ease-out
         box-sizing: border-box
+        z-index: 1
         img
             width: 100%
             height: 100%
-            object-fit: cover
-        &:hover
+            object-fit: cover        
+        figcaption
+            @include font($open,12px,normal,$main_light,14px)
+            text-transform: uppercase
+            text-align: center
+            position: relative
+            top: -60px
+            transform: scale(0)
+            transition: all .2s ease-in
+        h3
+            @include font($bebas,48px,normal,$main_light,normal)
+            position: absolute
+            top: calc(50% - (48px/2))
+            right: 0
+            opacity: 0
+            transition: all .2s ease-in
+        &:hover            
             transform: scale(1.07)
             padding: 2%
-            transition: all .2s ease-in
-        figcaption
-            color: $main_light
-            text-align: center
-            font-family: $light
-            font-weight: lighter
-            transform: translateY(-50px)
-            transform: scale(0)
+            transition: all .3s ease-in
+            z-index: 2
+            > figcaption
+                transform: scale(1)
+                transition: all .3s ease-out
+            > h3
+                transform: translate(25%,0)                
+                opacity: 1
+                transition: all .3s ease-in
+            
 //End Slider ----------------------------------------->
 //Asider---------------------------------------------->
 .index-main
@@ -45,14 +63,16 @@
         color: $main_light
         background-color: $main_dark
         width: 100%
+        h1
+            @include font($bebas,48px,normal,$main_light,normal)
         .aside-buttons-container
             width: 100%
             display: flex
             justify-content: space-around
             margin-bottom: 10em
     .aside-social-container
-        font-family: 'Futura Light', sans-serif
-        font-weight: 300
+        font-family: $montserrat
+        font-weight: 700
         grid-column: 1/2
         grid-row: 2/3
         span
@@ -78,13 +98,19 @@
         padding: 10em 0px 0px 2em
         position: relative
         bottom: 0
+        overflow-x: scroll
+        transition: all .5s
         .swiper-wrapper
             .swiper-slide
                 display: flex
                 align-items: center
                 // figure
-                //     width: 100%
-        .swiper-scrollbar
+                //     width: 100%a
+        &::-webkit-scrollbar
+            background-color: $main_dark
+            height: 2px
+            padding: 5px
+        &::-webkit-scrollbar-thumb
             background-color: $main_red
             height: 2px
     .down-arrow
@@ -111,10 +137,12 @@
     .counter-item
         display: flex
         align-items: center
-        justify-content: flex-end
+        justify-content: flex-end        
         h2
             color: $main_light
             font-size: 235px
+            font-family: $bebas
+            margin-right: .1em
         span
             transform: rotate(-90deg)
             text-transform: uppercase
