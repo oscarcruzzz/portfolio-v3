@@ -11,9 +11,10 @@ import { useStaticQuery, graphql } from "gatsby"
 import Sticky from "./assets/sticky_bars"
 import Nav from "./nav"
 import Header from "./header"
+import Footer from "./footer"
 import "../styles/config.sass"
 
-const Layout = ({ children }) => {  
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,10 +27,13 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Nav/>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <Sticky/>
-      <main>{children}</main>
+      <main>
+        <Nav />
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+        <Sticky />
+        {children}
+      </main>
+      <Footer />
     </>
   )
 }

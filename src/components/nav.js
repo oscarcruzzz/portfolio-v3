@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Link} from "gatsby";
 
 const Nav = () => {
     const [hideMenu, setHideMenu] = useState(false);
@@ -13,12 +14,12 @@ const Nav = () => {
       }
     return (
         <nav>
-            <span onClick={toggle} role="button">X</span>
+            <span onClick={toggle} role="button">{'<-'}</span>
             <ul>
-                <li>Lorem</li>
-                <li>Lorem</li>
-                <li>Lorem</li>
-                <li>Lorem</li>
+                <li><Link to="/projects">My Portfolio</Link></li>
+                <li><Link>Expertise</Link></li>
+                <li><Link>Contact Me</Link></li>
+                <li><Link>Blog</Link></li>
             </ul>
         </nav>
     );
