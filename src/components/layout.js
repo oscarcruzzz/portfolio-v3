@@ -27,6 +27,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Sticky/>
       <main>
         <Nav />
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
