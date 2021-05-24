@@ -1,9 +1,9 @@
 import React from "react"
-import Button from "./assets/button"
+import Button from "../assets/button"
 
 const Aside = () => {
   return (
-    <aside>
+    <aside className="column is-4">
       <h1>
         Hola!
         <br />

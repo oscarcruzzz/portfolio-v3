@@ -1,5 +1,5 @@
 import React from 'react';
-import Didactvs from "../images/logo/didactvs.webp"
+import Didactvs from "../../images/logo/didactvs.webp"
 const footer = () => {
     return (
         <footer>

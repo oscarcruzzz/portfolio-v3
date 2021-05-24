@@ -8,11 +8,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Sticky from "./assets/sticky_bars"
-import Nav from "./nav"
-import Header from "./header"
-import Footer from "./footer"
-import "../styles/config.sass"
+import Sticky from "../assets/sticky_bars"
+import Nav from "../fragments/nav"
+import Header from "../fragments/header"
+import Footer from "../fragments/footer"
+import "../../styles/config.sass"
+
+import '../../styles/bulma/bulma.min.css';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

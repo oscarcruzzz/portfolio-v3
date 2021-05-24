@@ -45,7 +45,27 @@
             
 //End Slider ----------------------------------------->
 //Asider---------------------------------------------->
-.index-main
+
+.main-index
+    height: 95vh
+    .main-top
+        height: 80%
+    .main-bottom   
+        height: 20%
+    .down-arrow
+        span
+            transform: rotate(90deg)
+            color: white
+            margin: auto
+            cursor: pointer
+    .aside-social-container
+        height: 120px
+        span
+            height: 100%
+            writing-mode: vertical-rl
+            text-orientation: mixed
+            transform: rotate(180deg)
+/** .index-main
     display: grid
     grid-template-columns: 480px auto
     grid-template-rows: 84% 16%
@@ -114,16 +134,6 @@
         &::-webkit-scrollbar-thumb
             background-color: $main_red
             height: 2px
-    .down-arrow
-        height: 100%
-        width: 100%
-        display: flex
-        // justify-content: center
-        span
-            transform: rotate(90deg)
-            color: white
-            margin: auto
-            cursor: pointer
 
 //End Aside----------------------------------------------->
 //Counter----------------------------------------------->

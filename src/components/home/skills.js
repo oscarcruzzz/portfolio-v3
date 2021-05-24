@@ -1,5 +1,5 @@
 import React from "react"
-import Skill from "../components/assets/skill"
+import Skill from "../assets/skill"
 const Skills = () => {
   return (
     <section className="skills">
