@@ -29,10 +29,12 @@
             right: 0
             opacity: 0
             transition: all .2s ease-in
+            z-index: 2
         &:hover            
             transform: scale(1.07)
             padding: 2%
             transition: all .3s ease-in
+            position: inherit
             z-index: 2
             > figcaption
                 transform: scale(1)
@@ -50,7 +52,7 @@
     height: 95vh
     .main-top
         height: 80%
-    .main-bottom   
+    .main-bottom
         height: 20%
     .down-arrow
         span
@@ -60,160 +62,47 @@
             cursor: pointer
     .aside-social-container
         height: 120px
-        span
-            height: 100%
-            writing-mode: vertical-rl
-            text-orientation: mixed
-            transform: rotate(180deg)
-/** .index-main
-    display: grid
-    grid-template-columns: 480px auto
-    grid-template-rows: 84% 16%
-    max-width: 100%
-    // background-color: red
-    height: 100vh
-    //overflow: hidden
-    aside
-        display: flex
-        flex-direction: column
-        justify-content: flex-end
-        padding: 0 50px
-        background-color: $main_dark
-        grid-row: 1/2
-        grid-column: 1/2
-        color: $main_light
-        background-color: $main_dark
-        width: 100%
-        h1
-            @include font($bebas,48px,normal,$main_light,normal)
-        .aside-buttons-container
-            width: 100%
-            display: flex
-            justify-content: space-around
-            margin-bottom: 10em
-    .aside-social-container
-        font-family: $montserrat
-        font-weight: 700
-        grid-column: 1/2
-        grid-row: 2/3
-        span
-            transform: rotate(-90deg)
-            display: inline-block
-            position: relative
-            bottom: -85px
-            right: 1.7em
-            font-weight: lighter
-            font-size: 16px
-        ul
-            padding-left: 1em
-            border-left: solid 1px $main_light
-            li
-                margin: 0
-                a
-                    color: $main_light
-                    font-size: 20px
-                    &:hover
-                        text-decoration: line-through
-    .swiper-container
-        width: 100%
-        padding: 10em 0px 0px 2em
-        position: relative
-        bottom: 0
-        overflow-x: scroll
-        transition: all .5s
-        .swiper-wrapper
-            .swiper-slide
-                display: flex
-                align-items: center
-                // figure
-                //     width: 100%a
-        &::-webkit-scrollbar
-            background-color: $main_dark
-            height: 2px
-            padding: 5px
-        &::-webkit-scrollbar-thumb
-            background-color: $main_red
-            height: 2px
 
 //End Aside----------------------------------------------->
 //Counter----------------------------------------------->
-.counter-main-container
-    display: flex
+.counter-container
     background-color: black
-    width: 100%
-    justify-content: space-around
     height: 300px
-    align-items: center
-    padding-left: 150px
-    padding-top: 50px
-    .counter-item
-        display: flex
-        align-items: center
-        justify-content: flex-end        
+    div
+        height: 100%
         h2
             color: $main_light
             font-size: 235px
             font-family: $bebas
-            margin-right: .1em
-        span
-            transform: rotate(-90deg)
-            text-transform: uppercase
-            color: $main_dark
-            height: 50px
-            position: relative
-            width: 250px
-            text-align: center
-            left: -100px
-            @include border($main_light)
-            font-family: $bebas
+            line-height: 1.25
 
 //End Counter----------------------------------------------->
 //Start Skills--------------------------------------------->
-.skills
-    height: 1080px
-    padding: 300px
-    box-sizing: border-box
-    .tab-header
-        color: $main_light
-        font-family: $bebas
-        display: flex
-        align-items: center
-        justify-content: flex-end        
-        ul
-            height: 100%
-            display: flex
-            align-items: center
-            li
-                font-size: 24px
-                margin-left: 45px
-                cursor: pointer
-    .tab-container
-        display: flex
-        justify-content: center
-        h2
-            position: absolute
-            left: -150px
-        .tab-content
-            padding-left: 5em
-            padding-top: 1em
-            div
-                display: grid
-                grid-template-columns: auto auto auto auto
-                grid-gap: 100px
-                .skill
-                    display: flex
-                    align-items: center
-                    justify-content: center
-                    background-color: transparent
-                    border: solid 1px $main_light
-                    height: 197px
-                    width: 197px
-                    font-family: $bebas
-                    color: $main_light
+.tab-nav
+    .tab-nav-items
+        border-bottom: solid 2px #707070
+        li
+            @include font($bebas,1em,normal,$main_light,normal)
+.tab-container
+    .tab-content
+        padding-top: 1em
+        div
+            display: grid
+            grid-template-columns: auto auto auto auto
+            grid-gap: 7em
+            justify-content: center
+            .skill
+                background-color: transparent
+                border: solid 1px $main_light
+                height: 210px
+                width: 210px
+                font-family: $bebas
+                color: $main_light
+                transition: all .2s
+                &:hover
+                    color: $main_dark
+                    background-color: $main_light
                     transition: all .2s
-                    &:hover
-                        color: $main_dark
-                        background-color: $main_light
-                        transition: all .2s
-                        box-shadow: 0px 0px 15px $main_light
+                    box-shadow: 0px 0px 15px $main_light
+                    cursor: pointer
 //End Skills----------------------------------------------->

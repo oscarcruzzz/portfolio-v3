@@ -29,14 +29,20 @@ body
     background-color: $main_dark    
 .logo
     width: 190px
-.container
-    display:flex
-    justify-content: space-between
-    margin: auto
-.section-title    
-    transform: rotate(-90deg)    
-    @include font($bebas,360px,400,$main_dark,10px)
-    @include border($main_light)
+// .container
+//     display:flex
+//     justify-content: space-between
+    // margin: auto
 p
     @include font($open,.9em,normal,$main_light,normal)
-    
+
+.vertical-text
+    height: 100%
+    writing-mode: vertical-rl
+    text-orientation: mixed
+    transform: rotate(180deg)
+
+.border-font
+    @extend .vertical-text
+    @include font($bebas,20rem,400,$main_dark,.1em)
+    @include border($main_light)

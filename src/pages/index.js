@@ -31,7 +31,7 @@ const IndexPage = () => {
         </div>
         <div className="columns main-bottom">
           <div className="aside-social-container column is-4 is-flex">
-            <span className="pl-2">Sigueme</span >
+            <span className="pl-2 vertical-text">Sigueme</span >
             <ul>
               <li>
                 <a
