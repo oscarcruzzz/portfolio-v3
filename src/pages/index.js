@@ -8,23 +8,29 @@ import Slider from "../components/home/slider"
 import Aside from "../components/home/aside"
 import Counter from "../components/home/counter"
 import Skills from "../components/home/skills"
+import Testimonials from "../components/home/testimonials"
 import Project from "../components/home/project"
 
 //styles
 import "../styles/index.sass"
 
 const IndexPage = () => {
-  const [showIndex, setIndexState] = useState(false)
+  const [showScroll, setScrollState] = useState(false)
 
-  const toggleIndex = () => {
-    setIndexState(!showIndex)
-    document.querySelector("html").style.overflowY = "visible"
+  let windowHeight = window.innerHeight;
+  console.log(windowHeight);
+
+  const toggleScroll = () => {
+    setScrollState(!showScroll)
+    document.querySelector("#index").style.overflowY = "visible"
+    window.scrollTo({top:windowHeight, behavior: 'smooth'});
   }
+
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Home" id="index"/>
 
-      <div className="main-index  px-6">
+      <div className="main-index px-6">
         <div className="columns is-flex is-align-items-center main-top">
           <Aside />
           <Slider />
@@ -62,7 +68,7 @@ const IndexPage = () => {
             </ul>
           </div>
           <div className="column down-arrow is-flex is-align-items-center is-justify-content-center">
-            <span role="button" onClick={toggleIndex}>
+            <span role="button" onClick={toggleScroll}>
               {" "}
               {`>`}{" "}
             </span>
@@ -71,6 +77,7 @@ const IndexPage = () => {
       </div>
       <Counter />
       <Skills />
+      <Testimonials/>
       <Project />
     </Layout>
   )

@@ -3,7 +3,7 @@ import Skill from "../assets/skill"
 const Skills = () => {
   return (
     <section className="columns section">
-      <h2 className="section-title column is-2 border-font">Skills</h2>
+      <h2 className="section-title column is-2 border-font-vertical">Skills</h2>
       <div className="column">
         <div className="tab-header is-10 columns">
           <ul className="column is-11 is-flex is-justify-content-flex-end tab-nav">

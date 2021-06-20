@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 import Didactvs from "../../images/logo/didactvs.webp"
 
-const Header = ({ siteTitle }) => {
+const Header = ({ siteTitle }, props) => {
   const [showMenu, setShowMenu] = useState(false)
   const toggle = () => {
     setShowMenu(!showMenu)

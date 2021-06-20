@@ -43,6 +43,23 @@ p
     transform: rotate(180deg)
 
 .border-font
+    @include font($bebas,10rem,400,$main_dark,auto)
+    @include border($main_light)    
+
+.border-font-vertical
     @extend .vertical-text
     @include font($bebas,20rem,400,$main_dark,.1em)
     @include border($main_light)
+
+.bebas
+    font-family: $bebas
+.open
+    font-family: $open
+.montserrat
+    font-family: $montserrat
+.m-auto
+    margin: auto !important
+.bg-light
+    background-color: $main_light
+.section
+    padding: 10rem 1.5rem

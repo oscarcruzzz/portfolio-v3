@@ -8,7 +8,7 @@ const Counter = () => {
           <div className="column is-3 is-flex is-align-items-stretch is-justify-content-center">
             <h2>3</h2>
             <span
-              className="vertical-text has-text-centered  border-font"
+              className="vertical-text has-text-centered  border-font-vertical"
               style={{ fontSize: "4rem" }}
             >
               YEARS
@@ -17,7 +17,7 @@ const Counter = () => {
           <div className="column is-3 is-flex is-align-items-stretch is-justify-content-center">
             <h2>9</h2>
             <span
-              className="vertical-text has-text-centered  border-font"
+              className="vertical-text has-text-centered  border-font-vertical"
               style={{ fontSize: "2.6rem" }}
             >
               PROJECTS
@@ -26,7 +26,7 @@ const Counter = () => {
           <div className="column is-3 is-flex is-align-items-stretch is-justify-content-center">
             <h2>6</h2>
             <span
-              className="vertical-text has-text-centered  border-font"
+              className="vertical-text has-text-centered  border-font-vertical"
               style={{ fontSize: "3rem" }}
             >
               CLIENTS
@@ -35,7 +35,7 @@ const Counter = () => {
           <div className="column is-3 is-flex is-align-items-stretch is-justify-content-center">
             <h2>2</h2>
             <span
-              className="vertical-text has-text-centered  border-font"
+              className="vertical-text has-text-centered  border-font-vertical"
               style={{ fontSize: "2.4rem" }}
             >
               LANGUAGES

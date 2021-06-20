@@ -13,6 +13,7 @@
     transition: all 0.3s
     background-color: transparent
     cursor: pointer
+    margin: 0 1em
     &:hover
         background-color: $main_red
         box-shadow: 0px 0px 0px $main_red
@@ -32,11 +33,16 @@
             height: 2px
             background-color: $main_light
 
-.sticky_bars
+.sticky-show
+    left: 0%
+
+.sticky-hide
+    left: -100%
+
+.sticky-bars
     position: fixed
     z-index: 2
-    top: 150px
-    left: -100%
+    top: 150px    
     .xs-text
         background-color: black
         color: $main_light
@@ -90,11 +96,17 @@ nav
         flex-direction: column
         justify-content: space-around
         li
-            @include font($bebas,10em,normal,$main_light,normal)
+            a
+                @include font($bebas,8em,normal,$main_light,normal)
+                &:hover
+                    text-decoration: line-through
+                    color: $main_light
+
 .open-menu
     left: 0 !important
     transition: all .5s ease-in-out
     cursor: pointer
+
 footer
     background-color: #000
     padding: 50px 50px 0 50px
@@ -102,7 +114,6 @@ footer
         img
             width: 175px
     .container
-        padding: 50px 0
         width: 75%
         display: flex
         align-items: center
@@ -125,5 +136,3 @@ footer
                 margin-right: 1em
     .bottom-container
         border-top: solid 1px $main_red
-        padding: 10px
-        @include font($open,16px,normal,$main_light,1px)

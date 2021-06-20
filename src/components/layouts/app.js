@@ -14,9 +14,9 @@ import Header from "../fragments/header"
 import Footer from "../fragments/footer"
 import "../../styles/config.sass"
 
-import '../../styles/bulma/bulma.min.css';
+import "../../styles/bulma/bulma.min.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, sticky }, props) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -29,11 +29,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Sticky/>
+      <Sticky sticky={sticky} />
       <main>
         <Nav />
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-        <Sticky />
         {children}
       </main>
       <Footer />

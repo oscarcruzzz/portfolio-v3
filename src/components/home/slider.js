@@ -13,35 +13,37 @@ const Slider = () => {
       spaceBetween={20}
       slidesPerView={2}
       scrollbar={{ draggable: true }}
+      className="is-flex is-align-items-center"
     >
       <SwiperSlide>
         <figure>
           <h3><a href="https://google.com">Lorem</a></h3>
-          <img src="https://via.placeholder.com/670x450" alt="car"/>
+          <img src="https://via.placeholder.com/670x450/red" alt="car"/>
           <figcaption>Lorem</figcaption>
         </figure>
       </SwiperSlide>
       <SwiperSlide>
         <figure>
           <h3><a href="https://google.com">Lorem</a></h3>
-          <img src="https://via.placeholder.com/650x450" alt="house" />
+          <img src="https://via.placeholder.com/650x450/black" alt="house" />
           <figcaption>Lorem</figcaption>
         </figure>
       </SwiperSlide>
       <SwiperSlide>
         <figure>
           <h3><a href="https://google.com">Lorem</a></h3>
-          <img src="https://via.placeholder.com/750x505" alt="horse" />
+          <img src="https://via.placeholder.com/750x505/c840d1" alt="horse" />
           <figcaption>Lorem</figcaption>
         </figure>
       </SwiperSlide>
       <SwiperSlide>
         <figure>
           <h3><a href="https://google.com">Lorem</a></h3>
-          <img src="https://via.placeholder.com/450x450" alt="movie" />
+          <img src="https://via.placeholder.com/450x450/50541a" alt="movie" />
           <figcaption>Lorem</figcaption>
         </figure>
-      </SwiperSlide>      
+      </SwiperSlide>
+      <SwiperSlide></SwiperSlide>
     </Swiper>
   )
 }

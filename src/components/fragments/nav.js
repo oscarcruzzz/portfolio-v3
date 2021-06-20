@@ -13,9 +13,9 @@ const Nav = () => {
         }
       }
     return (
-        <nav>
+        <nav className="columns">
             <span onClick={toggle} role="button">{'<-'}</span>
-            <ul>
+            <ul className="pl-6">
                 <li><Link to="/projects">My Portfolio</Link></li>
                 <li><Link>Expertise</Link></li>
                 <li><Link>Contact Me</Link></li>

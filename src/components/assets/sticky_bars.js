@@ -3,7 +3,7 @@ import Facebook from '../../images/icons/facebook.svg'
 import Instagram from '../../images/icons/instagram.svg'
 import Linkedin from '../../images/icons/linkedin.svg'
 
-const Sticky_bars = () => {
+const Sticky_bars = (props) => {
     const [showStickyMenu, setShowStickyMenu] = useState(false)
     const sticky_toggle = () => {
         setShowStickyMenu(!showStickyMenu)
@@ -15,7 +15,7 @@ const Sticky_bars = () => {
         }
       }
     return (
-        <div className="sticky_bars">
+        <div className={props.sticky ? "sticky-bars sticky-show" : "sticky-bars sticky-hide"}>
             <div className="xs-text" onClick={sticky_toggle}>
                 <div>
                     <span></span>

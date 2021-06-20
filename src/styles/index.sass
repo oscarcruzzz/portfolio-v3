@@ -1,6 +1,16 @@
 @import ./main
 
+#index
+    overflow: hidden
+    position: relative
+    transition: all 2s easy-in
+    max-height: 100vh
+
 //Slider---------------------------------------------->
+.swiper-container
+    height: 100%
+.swiper-wrapper
+    height: auto
 .swiper-slide
     &:hover
         cursor: grab
@@ -13,7 +23,8 @@
         img
             width: 100%
             height: 100%
-            object-fit: cover        
+            object-fit: cover
+            filter: grayscale(1)
         figcaption
             @include font($open,12px,normal,$main_light,14px)
             text-transform: uppercase
@@ -23,19 +34,23 @@
             transform: scale(0)
             transition: all .2s ease-in
         h3
-            @include font($bebas,48px,normal,$main_light,normal)
             position: absolute
             top: calc(50% - (48px/2))
             right: 0
             opacity: 0
             transition: all .2s ease-in
             z-index: 2
+            a
+                @include font($bebas,48px,normal,$main_light,normal)
         &:hover            
-            transform: scale(1.07)
+            width: 2.5
             padding: 2%
             transition: all .3s ease-in
             position: inherit
             z-index: 2
+            > img
+                filter: grayscale(0)
+                transition: all .3s ease-out
             > figcaption
                 transform: scale(1)
                 transition: all .3s ease-out
@@ -62,6 +77,12 @@
             cursor: pointer
     .aside-social-container
         height: 120px
+        ul
+            li
+                a
+                    color: $main_light
+                    &:hover
+                        text-decoration: line-through
 
 //End Aside----------------------------------------------->
 //Counter----------------------------------------------->
@@ -106,3 +127,10 @@
                     box-shadow: 0px 0px 15px $main_light
                     cursor: pointer
 //End Skills----------------------------------------------->
+.background-testimonials
+    color: #ededed
+    font-size: 150px
+    line-height: 1
+    position: absolute
+    text-decoration: line-through
+    z-index: 0
